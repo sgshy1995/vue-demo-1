@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Demo from './Demo.vue'
+import Demo from './components/demo.vue'
 
 new Vue({
   render(h) {

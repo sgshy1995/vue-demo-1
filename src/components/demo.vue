@@ -2,6 +2,7 @@
   <div class="demo">
     {{n}}
     <button @click="add">Click me to add one</button>
+    <img src="../assets/logo.png" alt="logo">
   </div>
 </template>
 
