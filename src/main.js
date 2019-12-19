@@ -1,8 +1,21 @@
-import Vue from 'vue'
-import Demo from './components/demo.vue'
+const Vue = window.Vue
 
 new Vue({
-  render(h) {
-    return h(Demo)
-  }
+    data: {
+        obj: {
+            a: 0
+        }
+    },
+    template: `
+    <div>
+      {{obj.b}}
+      <button @click='one'>One</button>
+    </div>
+    `,
+    methods: {
+        one() {
+            Vue.set(this.obj, 'b', 1)
+            // this.$set(this.obj, 'b', 1)
+        }
+    }
 }).$mount('#app')
